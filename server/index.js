@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://project-manager-sandy-one.vercel.app", "http://localhost:3000"],
+    origin: ["https://project-manager-icjt.vercel.app","https://project-manager-sandy-one.vercel.app", "http://localhost:3000"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
   })
