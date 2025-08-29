@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000", // frontend URL
+    origin: "https://project-manager-sandy-one.vercel.app" || "http://localhost:3000", // frontend URL
     credentials: true, // allow cookies/auth headers
     methods: ["GET", "POST", "PUT", "DELETE"], // allowed methods
   })

@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/projects";
+const API_URL = `${process.env.NEXT_PUBLIC_API_URL}/projects`;
 
 // ✅ Safe helper to grab token
 const getAuthHeaders = () => {
